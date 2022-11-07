@@ -11,9 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@graphql-yoga/node": "^2.13.4",
+    "@graphql-tools/load-files": "^6.6.1",
+    "@graphql-tools/schema": "^9.0.8",
     "cross-env": "^7.0.3",
-    "graphql": "^16.5.0",
-    "nodemon": "^2.0.19"
+    "graphql": "^16.6.0",
+    "graphql-yoga": "^3.0.0-next.10",
+    "nodemon": "^2.0.20"
   }
 }
