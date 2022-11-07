@@ -1,0 +1,9 @@
+query SearchEntities($queryString: String!) {
+  search(queryString: $queryString) {
+    id
+    name
+    ... on Beer {
+      tagline
+    }
+  }
+}

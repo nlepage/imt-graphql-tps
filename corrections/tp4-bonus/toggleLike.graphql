@@ -1,0 +1,9 @@
+mutation AddABeer($userId: ID!, $beerId: ID!) {
+  toggleLike(userId: $userId, beerId: $beerId) {
+    id
+    name
+    likedBeers {
+      id
+    }
+  }
+}

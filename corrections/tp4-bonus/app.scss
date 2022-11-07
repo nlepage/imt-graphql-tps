@@ -1,0 +1,25 @@
+@import "node_modules/bulma/sass/utilities/initial-variables";
+@import "node_modules/bulma/bulma";
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+.select {
+  &,
+  select {
+    width: 100%;
+  }
+}
+
+.card {
+  position: relative;
+
+  .like-button {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
+}

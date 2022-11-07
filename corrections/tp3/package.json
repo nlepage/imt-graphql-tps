@@ -1,0 +1,22 @@
+{
+  "name": "tp3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-tools/load-files": "^6.6.1",
+    "@graphql-tools/schema": "^9.0.8",
+    "cross-env": "^7.0.3",
+    "graphql": "^16.6.0",
+    "graphql-yoga": "^3.0.0-next.10",
+    "node-fetch": "^3.2.9",
+    "nodemon": "^2.0.20"
+  }
+}

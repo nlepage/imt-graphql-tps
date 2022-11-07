@@ -1,0 +1,26 @@
+{
+  "name": "tp6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@envelop/apollo-datasources": "^1.1.0",
+    "@envelop/core": "^2.4.0",
+    "@graphql-yoga/node": "^2.13.4",
+    "apollo-datasource": "^3.3.2",
+    "apollo-datasource-rest": "^3.6.1",
+    "apollo-server-caching": "^3.3.0",
+    "cross-env": "^7.0.3",
+    "dataloader": "^2.1.0",
+    "graphql": "^16.5.0",
+    "node-fetch": "^3.2.9",
+    "nodemon": "^2.0.19"
+  }
+}
