@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formation GraphQL - TP4</title>
+    <link rel="stylesheet" href="app.scss" />
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Formation GraphQL - TP4</h1>
+        <form action="" id="searchForm">
+          <div class="field">
+            <label class="label">Rechercher...</label>
+            <div class="control">
+              <input
+                required
+                class="input"
+                type="search"
+                placeholder="IPA, Cassandre, Robert..."
+                name="query"
+              />
+            </div>
+          </div>
+
+          <div class="control">
+            <button type="submit" class="button is-link">Rechercher</button>
+          </div>
+        </form>
+
+        <div id="result"></div>
+      </div>
+    </section>
+
+    <script id="list-template" type="x-tmpl-mustache">
+      <div class="list">
+      {{#search}}
+        <div class="card">
+          <div class="card-content">
+            <div class="content">{{name}}</div>
+          </div>
+        </div>
+      {{/search}}
+      </div>
+    </script>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

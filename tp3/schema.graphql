@@ -1,0 +1,26 @@
+# Base element, it's a database item.
+interface Entity {
+  id: ID!
+  name: String
+}
+
+# User entity. Implements Entity interface.
+type User implements Entity {
+  id: ID!
+  name: String
+  # User's liked beers. Non-nullable array but can be empty.
+  likedBeers: [Beer]!
+}
+
+# Beer entity. Implements Entity interface.
+type Beer implements Entity {
+  id: ID!
+  name: String
+}
+
+type Query {
+  user(id: ID!): User
+  users: [User]!
+  beer(id: ID!): Beer
+  beers: [Beer]!
+}
